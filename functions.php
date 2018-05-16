@@ -53,3 +53,18 @@ require_once( 'library/responsive-images.php' );
 
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
 // require_once( 'library/class-foundationpress-protocol-relative-theme-assets.php' );
+
+// Change Woocommerce Order Notes Placeholder Text
+add_filter( 'woocommerce_checkout_fields' , 'custom_override_order_notes_fields' );
+
+// Our hooked in function - $fields is passed via the filter!
+function custom_override_order_notes_fields( $fields ) {
+     $fields['order']['order_comments']['placeholder'] = 'Add Special Notes About Your Order Here';
+     return $fields;
+}
+
+function FoundationPress_styles() {
+  wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700' );
+  wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,800' );
+}
+add_action( 'wp_enqueue_style', 'FoundationPress_styles' );

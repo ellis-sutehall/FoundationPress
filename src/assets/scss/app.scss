@@ -80,3 +80,136 @@
 // Templates
 @import "templates/front";
 @import "templates/kitchen-sink";
+
+* {
+  // font-family: 'Playfair Display', serif!important;
+}
+header#front-hero {
+  margin-bottom: 12rem;
+  // background: url('../images/hero.jpg');
+  // background-size: cover;
+  figcaption {
+    text-align: center;
+  }
+}
+.events {
+  margin-top: 48px;
+}
+h1, h2, h3, h4, h4, h5, h6, .tagline h4 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+.widget h6 {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.woocommerce {
+  .widget_pages ul li a, #woocommerce_products-3 ul.product_list_widget li a {
+    font-weight: 400;
+  }
+}
+.events h1 {
+  text-align: left;
+}
+h4, li a {
+  font-family: 'Raleway', sans-serif;
+}
+p {
+  font-family: 'Raleway', sans-serif;
+}
+#front-hero .tagline {
+  width: 100%;
+  text-align: center;
+}
+
+// woocommerce button reset
+.woocommerce {
+  #respond input#submit,
+  a.button,
+  button.button,
+  input.button,
+  button.button.alt,
+  input.button.alt,
+  div.wc-proceed-to-checkout a.checkout-button {
+    font-size: .9rem;
+    padding: .85em 1em;
+    font-weight: 400;
+    border-radius: 0px;
+    color: #ffffff;
+    background-color: $button-background;
+    &:hover {
+      background-color: $button-background-hover;
+      color: white;
+    }
+  }
+}
+// Variations
+.woocommerce div.product form.cart .variations label {
+  font-weight: normal;
+}
+td.label {
+  background: none;
+  label {
+    font-size: 1rem;
+    line-height: 3rem;
+  }
+}
+// Product tabs reset
+.woocommerce {
+  div.product .woocommerce-tabs ul.tabs {
+    border: 0;
+    li a {
+      font-weight: 300;
+    }
+  }
+}
+// Mailchimp Sidebar Widget
+#mc_signup_submit {
+  width: 100%;
+}
+
+// Sidebar
+aside .widget:not( .widget_search ) {
+  border: 1px solid #cacaca;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  box-sizing: border-box;
+}
+.widget h6, .woocommerce-loop-product__title {
+  text-align: left;
+  // font-weight: 600;
+}
+.woocommerce {
+  ul.cart_list li a,
+  ul.product_list_widget li a,
+  .widget_pages li a {
+    font-weight: 600;
+  }
+}
+.widget_search .input-group {
+  margin-bottom: 1.25rem;
+}
+
+// Checkout Heading
+form.woocommerce-checkout {
+  h2, h3 {
+    text-align: left;
+  }
+  h2 {
+    font-size: 1.9375rem;
+  }
+}
+// Hide
+p.woocommerce-result-count, form.woocommerce-ordering {
+  display: none;
+}
+
+// Recaptcha
+// Fix for captcha preventing input
+.wpcf7-form-control-wrap {
+  clear: both;
+}
+#recaptcha {
+  clear: both;
+  margin-left: 0.938em;
+}
