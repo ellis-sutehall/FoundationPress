@@ -9,3 +9,5 @@ import Foundation from 'foundation-sites';
 //import './lib/foundation-explicit-pieces';
 
 $(document).foundation();
+
+document.querySelector('.desktop-menu').classList.add('align-center');

@@ -34,13 +34,12 @@
 		</div>
 
 		<nav class="site-navigation top-bar" role="navigation">
-			<div class="top-bar">
+			<div class="top-bar-left">
 				<div class="site-desktop-title top-bar-title">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-					<h2 class="description"><?php echo get_bloginfo('description') ?></h2>
 				</div>
 			</div>
-			<div class="top-bar">
+			<div class="top-bar-right">
 				<?php foundationpress_top_bar_r(); ?>
 
 				<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) : ?>
