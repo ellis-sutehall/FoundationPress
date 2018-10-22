@@ -18,7 +18,7 @@ get_header(); ?>
 			    <ul class="orbit-container">
 			      <li class="orbit-slide">
 			        <figure class="orbit-figure">
-			          <img class="orbit-image" src="<?php echo get_stylesheet_directory_uri(); ?>/src/assets/images/01.jpg" alt="image alt text">
+			          <img class="orbit-image" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/01.jpg" alt="image alt text">
 			          <figcaption class="orbit-caption">
 			            <p>Copyright &copy; Sound On Sound Publications</p>
 			          </figcaption>
@@ -26,12 +26,12 @@ get_header(); ?>
 			      </li>
 			      <li class="orbit-slide">
 			        <figure class="orbit-figure">
-			          <img class="orbit-image" src="<?php echo get_stylesheet_directory_uri(); ?>/src/assets/images/02.jpg" alt="image alt text">
+			          <img class="orbit-image" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/02.jpg" alt="image alt text">
 			        </figure>
 			      </li>
 			      <li class="orbit-slide">
 			        <figure class="orbit-figure">
-			          <img class="orbit-image" src="<?php echo get_stylesheet_directory_uri(); ?>/src/assets/images/03.jpg" alt="image alt text">
+			          <img class="orbit-image" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/03.jpg" alt="image alt text">
 			        </figure>
 			      </li>
 			    </ul>

@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
-<p><?php printf( __( "Thanks again for booking a place, we look forward to seeing you! If you have any questions that aren't answered by the information sheet available to download below, please email me. <br/> If you find you are unable to attend the event, please refer to the refund policy listed in our FAQs.", 'woocommerce' ), get_option( 'blogname' ) ); ?></p>
+<p><?php printf( __( "Many thanks for your booking. Please see below for any workshop information that is instantly available to download (applicable, in particular, to all-comers weekend workshops, for example). Don't worry if nothing is listed &mdash; we'll be in touch!", 'woocommerce' ), get_option( 'blogname' ) ); ?></p>
 
 <?php
 

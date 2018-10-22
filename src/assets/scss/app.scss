@@ -99,9 +99,12 @@ h1, h2, h3, h4, h4, h5, h6, .tagline h4 {
   text-align: center;
   font-family: 'Playfair Display', serif;
 }
+h1.entry-title {
+  text-align: left;
+}
 h2.description {
   color: #02598b;
-  margin: -1rem 0 2rem 0;
+  margin: 1rem 0 2rem 0;
 }
 .widget h6 {
   font-size: 1.4rem;
@@ -237,6 +240,7 @@ p.woocommerce-result-count, form.woocommerce-ordering {
     padding: 0;
     letter-spacing: 2px;
     color: #0384ce;
+    line-height: 4rem;
   }
 }
 ul#menu-main-menu-1 {
@@ -261,4 +265,10 @@ ul#menu-main-menu-1 {
 a.hollow {
   margin-top: 2rem;
   font-weight: bold;
+}
+
+@include breakpoint(medium) {
+  .top-bar .top-bar-title a {
+    // line-height: 50rem!important;
+  }
 }
